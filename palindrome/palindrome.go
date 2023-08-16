@@ -1,3 +1,4 @@
+// Package palindrome provides functionality to determine if a string is a palindrome
 package palindrome
 
 // IsPalindrome takes a string and reverses it, then compares it to the original. If both match it returns true, otherwise false

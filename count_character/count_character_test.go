@@ -1,6 +1,7 @@
 package count_character
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -49,4 +50,9 @@ func BenchmarkCountCharacter(b *testing.B) {
 	for n := 0; n < b.N; n++ {
 		CountCharacter("a", "83gnsdawondfivamnoicsvaosicv")
 	}
+}
+
+func ExampleCountCharacter() {
+	fmt.Println(CountCharacter("a", "abacus"))
+	// Output: 2
 }

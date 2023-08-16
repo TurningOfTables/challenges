@@ -1,3 +1,4 @@
+// Package matchinttotal provides functionality to determine the total of any ints which appear more than once in an int slice
 package matchinttotal
 
 // MatchIntTotal takes an input slice of ints, and returns the total of any ints which appear more than once

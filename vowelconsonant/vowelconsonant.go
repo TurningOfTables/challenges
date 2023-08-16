@@ -1,3 +1,4 @@
+// Package vowelconsonant provides functionality determine how many vowels and consonants are in a given string
 package vowelconsonant
 
 import (

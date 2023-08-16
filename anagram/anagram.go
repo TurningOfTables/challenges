@@ -1,3 +1,4 @@
+// Package anagram provides functionality to determine whether two strings are anagrams of each other
 package anagram
 
 import "strings"

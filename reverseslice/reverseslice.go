@@ -1,3 +1,4 @@
+// Package reverseslice provides functionality to reverse a slice (surprisingly)
 package reverseslice
 
 import "golang.org/x/exp/slices"

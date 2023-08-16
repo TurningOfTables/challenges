@@ -1,6 +1,7 @@
 package vowelconsonant
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -52,4 +53,9 @@ func BenchmarkVowelConsonant(b *testing.B) {
 	for n := 0; n < b.N; n++ {
 		VowelConsonant("qwertyuiop")
 	}
+}
+
+func ExampleVowelConsonant() {
+	fmt.Printf("%+v", VowelConsonant("banana"))
+	// Output: {Vowels:3 Consonants:3}
 }

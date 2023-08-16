@@ -1,3 +1,4 @@
+// Package string_reverse provides functionality to reverse a string (surprisingly)
 package string_reverse
 
 // StringReverse takes a string, creates a slice of bytes, addes each character in reverse order, then returns a new string containing the result

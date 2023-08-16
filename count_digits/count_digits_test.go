@@ -42,3 +42,8 @@ func BenchmarkCountDigits(b *testing.B) {
 		CountDigits(fmt.Sprint(rand.Intn(9999)))
 	}
 }
+
+func ExampleCountDigits() {
+	fmt.Println(CountDigits("ab23c5"))
+	// Output: 3
+}

@@ -1,3 +1,4 @@
+// Package count_character provides functionality to determine how many times a string contains a substring
 package count_character
 
 import "strings"

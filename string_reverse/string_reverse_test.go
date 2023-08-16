@@ -1,6 +1,7 @@
 package string_reverse
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -20,4 +21,9 @@ func BenchmarkStringReverse(b *testing.B) {
 	for n := 0; n < b.N; n++ {
 		StringReverse(input)
 	}
+}
+
+func ExampleStringReverse() {
+	fmt.Println(StringReverse("How quickly daft jumping zebras vex!"))
+	// Output: !xev sarbez gnipmuj tfad ylkciuq woH
 }

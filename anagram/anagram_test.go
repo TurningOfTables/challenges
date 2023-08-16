@@ -1,6 +1,7 @@
 package anagram
 
 import (
+	"fmt"
 	"math/rand"
 	"testing"
 
@@ -51,4 +52,11 @@ func BenchmarkIsAnagram(b *testing.B) {
 		i := testData[rand.Intn(len(testData))]
 		IsAnagram(i.x, i.y)
 	}
+}
+
+func ExampleIsAnagram() {
+	fmt.Println(IsAnagram("bored", "robed"))
+	fmt.Println(IsAnagram("soft", "cat"))
+	// Output: true
+	// false
 }

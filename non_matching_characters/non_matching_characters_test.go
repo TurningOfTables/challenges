@@ -1,6 +1,7 @@
 package non_matching_characters
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -30,4 +31,9 @@ func BenchmarkNonMatchingCharacters(b *testing.B) {
 	for n := 0; n < b.N; n++ {
 		NonMatchingCharacters("abc", "abd")
 	}
+}
+
+func ExampleNonMatchingCharacters() {
+	fmt.Println(NonMatchingCharacters("abc", "abd"))
+	// Output:[c d]
 }

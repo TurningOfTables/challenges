@@ -1,6 +1,7 @@
 package reverseslice
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -39,4 +40,9 @@ func BenchmarkFunctions(b *testing.B) {
 			}
 		})
 	}
+}
+
+func ExampleReverseSlice() {
+	fmt.Println(ReverseSlice([]int{1, 2, 3, 4}))
+	// Output: [4 3 2 1]
 }

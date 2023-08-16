@@ -1,3 +1,4 @@
+// Package non_matching_characters provides functionality to determine the all characters which are not present in both provided strings
 package non_matching_characters
 
 import "strings"

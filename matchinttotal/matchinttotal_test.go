@@ -1,6 +1,7 @@
 package matchinttotal
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -43,4 +44,9 @@ func BenchmarkMatchIntTotal(b *testing.B) {
 	for n := 0; n < b.N; n++ {
 		MatchIntTotal([]int{1, 2, 2, 3, 5})
 	}
+}
+
+func ExampleMatchIntTotal() {
+	fmt.Println(MatchIntTotal([]int{1, 2, 2, 4, 5}))
+	// Output: 4
 }

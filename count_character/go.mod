@@ -1,4 +1,4 @@
-module challanges/count_character
+module challenges/count_character
 
 go 1.21.0
 

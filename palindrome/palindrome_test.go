@@ -1,6 +1,7 @@
 package palindrome
 
 import (
+	"fmt"
 	"math/rand"
 	"testing"
 
@@ -27,4 +28,11 @@ func BenchmarkIsPalindrome(b *testing.B) {
 	for n := 0; n < b.N; n++ {
 		IsPalindrome(mixed[rand.Intn(len(mixed))])
 	}
+}
+
+func ExampleIsPalindrome() {
+	fmt.Println(IsPalindrome("kayak"))
+	fmt.Println(IsPalindrome("jackpot"))
+	// Output: true
+	// false
 }

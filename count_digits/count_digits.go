@@ -1,3 +1,4 @@
+// Package count_digits provides functionality to determine how many digits are in a string
 package count_digits
 
 import (
