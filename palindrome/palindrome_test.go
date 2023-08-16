@@ -12,12 +12,12 @@ func TestIsPalindrome(t *testing.T) {
 	var testNotPalindromes = []string{"campus", "invest", "shop", "law", "celebrate", "catfish", "jackpot", "sublime", "future", "picnic"}
 
 	for _, palindrome := range testPalindromes {
-		res := isPalindrome(palindrome)
+		res := IsPalindrome(palindrome)
 		assert.True(t, res, "isPalindrome(%v) - expected true but got %v", palindrome, res)
 	}
 
 	for _, notPalindrome := range testNotPalindromes {
-		res := isPalindrome(notPalindrome)
+		res := IsPalindrome(notPalindrome)
 		assert.False(t, res, "isPalindrom(%v) - expected false but got %v", notPalindrome, res)
 	}
 }
@@ -25,6 +25,6 @@ func TestIsPalindrome(t *testing.T) {
 func BenchmarkIsPalindrome(b *testing.B) {
 	var mixed = []string{"kayak", "campus", "deified", "invest"}
 	for n := 0; n < b.N; n++ {
-		isPalindrome(mixed[rand.Intn(len(mixed))])
+		IsPalindrome(mixed[rand.Intn(len(mixed))])
 	}
 }

@@ -43,13 +43,13 @@ func TestVowelConsonant(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		res := vowelCosonant(test.input)
+		res := VowelConsonant(test.input)
 		assert.Equal(t, test.expected, res)
 	}
 }
 
 func BenchmarkVowelConsonant(b *testing.B) {
 	for n := 0; n < b.N; n++ {
-		vowelCosonant("qwertyuiop")
+		VowelConsonant("qwertyuiop")
 	}
 }

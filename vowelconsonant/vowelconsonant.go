@@ -9,9 +9,9 @@ type Info struct {
 	consonants int
 }
 
-// vowelConsonant takes an input string, and returns an Info struct containing vowels (int) and consonants (int)
+// VowelConsonant takes an input string, and returns an Info struct containing vowels (int) and consonants (int)
 // Other characters such as spaces and punctuation are ignored
-func vowelCosonant(input string) Info {
+func VowelConsonant(input string) Info {
 	var vowels = "aeiou"
 	var consonants = "bcdfghjklmnpqrstvwxyz"
 	var i Info

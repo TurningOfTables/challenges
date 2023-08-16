@@ -8,10 +8,10 @@ import (
 
 func TestFunctions(t *testing.T) {
 	var functions = map[string]func([]int) []int{
-		"Using slices.Reverse()":       reverseSlice,
-		"Using append":                 reverseSlice1,
-		"Using set index directly":     reverseSlice2,
-		"Using slices.Reverse() (raw)": reverseSlice3,
+		"Using slices.Reverse()":       ReverseSlice,
+		"Using append":                 ReverseSlice1,
+		"Using set index directly":     ReverseSlice2,
+		"Using slices.Reverse() (raw)": ReverseSlice3,
 	}
 
 	for name, fn := range functions {
@@ -25,10 +25,10 @@ func TestFunctions(t *testing.T) {
 
 func BenchmarkFunctions(b *testing.B) {
 	var functions = map[string]func([]int) []int{
-		"Using slices.Reverse()":       reverseSlice,
-		"Using append":                 reverseSlice1,
-		"Using set index directly":     reverseSlice2,
-		"Using slices.Reverse() (raw)": reverseSlice3,
+		"Using slices.Reverse()":       ReverseSlice,
+		"Using append":                 ReverseSlice1,
+		"Using set index directly":     ReverseSlice2,
+		"Using slices.Reverse() (raw)": ReverseSlice3,
 	}
 
 	for name, fn := range functions {

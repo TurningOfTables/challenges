@@ -2,12 +2,14 @@ package reverseslice
 
 import "golang.org/x/exp/slices"
 
-func reverseSlice(s []int) []int {
+// ReverseSlice takes a slice of ints and returns a slice of ints in reverse order
+func ReverseSlice(s []int) []int {
 	slices.Reverse(s)
 	return s
 }
 
-func reverseSlice1(s []int) []int {
+// ReverseSlice1 takes a slice of ints and returns a slice of ints in reverse order
+func ReverseSlice1(s []int) []int {
 	var revSlice []int
 
 	for x := len(s); x > 0; x-- {
@@ -16,7 +18,8 @@ func reverseSlice1(s []int) []int {
 	return revSlice
 }
 
-func reverseSlice2(s []int) []int {
+// ReverseSlice2 takes a slice of ints and returns a slice of ints in reverse order
+func ReverseSlice2(s []int) []int {
 	var revSlice = make([]int, len(s))
 
 	for x := len(s); x > 0; x-- {
@@ -25,7 +28,8 @@ func reverseSlice2(s []int) []int {
 	return revSlice
 }
 
-func reverseSlice3(s []int) []int {
+// ReverseSlice4 takes a slice of ints and returns a slice of ints in reverse order
+func ReverseSlice3(s []int) []int {
 	for i, j := 0, len(s)-1; i < j; i, j = i+1, j-1 {
 		s[i], s[j] = s[j], s[i]
 	}

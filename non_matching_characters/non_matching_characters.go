@@ -2,8 +2,8 @@ package non_matching_characters
 
 import "strings"
 
-// nonMatchingCharacters takes two strings, and returns a string slice containing any characters not present in both strings
-func nonMatchingCharacters(x, y string) []string {
+// NonMatchingCharacters takes two strings, and returns a string slice containing any characters not present in both strings
+func NonMatchingCharacters(x, y string) []string {
 	var nonMatching []string
 	for _, v := range x {
 		if !strings.ContainsRune(y, v) {

@@ -32,13 +32,13 @@ func TestCountDigits(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		res := countDigits(test.input)
+		res := CountDigits(test.input)
 		assert.Equal(t, test.expected, res)
 	}
 }
 
-func BenchmarkCountDigits1(b *testing.B) {
+func BenchmarkCountDigits(b *testing.B) {
 	for n := 0; n < b.N; n++ {
-		countDigits(fmt.Sprint(rand.Intn(9999)))
+		CountDigits(fmt.Sprint(rand.Intn(9999)))
 	}
 }

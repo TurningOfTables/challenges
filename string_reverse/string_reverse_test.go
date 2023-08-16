@@ -9,7 +9,7 @@ import (
 func TestStringReverse(t *testing.T) {
 	input := "How quickly daft jumping zebras vex!"
 
-	output := stringReverse(input)
+	output := StringReverse(input)
 	expectedOutput := "!xev sarbez gnipmuj tfad ylkciuq woH"
 
 	assert.Equal(t, expectedOutput, output)
@@ -18,6 +18,6 @@ func TestStringReverse(t *testing.T) {
 func BenchmarkStringReverse(b *testing.B) {
 	input := "How quickly daft jumping zebras vex!"
 	for n := 0; n < b.N; n++ {
-		stringReverse(input)
+		StringReverse(input)
 	}
 }

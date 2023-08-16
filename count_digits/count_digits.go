@@ -4,7 +4,8 @@ import (
 	"bytes"
 )
 
-func countDigits(input string) int {
+// CountDigits takes an input string and returns an int of the number of digits within that string
+func CountDigits(input string) int {
 	digits := []byte("0123456789")
 	var count int
 

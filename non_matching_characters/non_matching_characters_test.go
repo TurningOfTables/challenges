@@ -21,13 +21,13 @@ func TestNonMatchingCharacters(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		res := nonMatchingCharacters(test.x, test.y)
+		res := NonMatchingCharacters(test.x, test.y)
 		assert.Equal(t, test.expected, res)
 	}
 }
 
 func BenchmarkNonMatchingCharacters(b *testing.B) {
 	for n := 0; n < b.N; n++ {
-		nonMatchingCharacters("abc", "abd")
+		NonMatchingCharacters("abc", "abd")
 	}
 }

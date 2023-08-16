@@ -34,13 +34,13 @@ func TestMatchIntTotal(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		res := matchIntTotal(test.input)
+		res := MatchIntTotal(test.input)
 		assert.Equal(t, test.expected, res)
 	}
 }
 
 func BenchmarkMatchIntTotal(b *testing.B) {
 	for n := 0; n < b.N; n++ {
-		matchIntTotal([]int{1, 2, 2, 3, 5})
+		MatchIntTotal([]int{1, 2, 2, 3, 5})
 	}
 }

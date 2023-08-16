@@ -19,7 +19,7 @@ func TestIsAnagram(t *testing.T) {
 	}
 
 	for _, testAnagram := range testAnagrams {
-		res := isAnagram(testAnagram.x, testAnagram.y)
+		res := IsAnagram(testAnagram.x, testAnagram.y)
 		assert.True(t, res)
 	}
 
@@ -34,7 +34,7 @@ func TestIsAnagram(t *testing.T) {
 	}
 
 	for _, testNotAnagram := range testNotAnagrams {
-		res := isAnagram(testNotAnagram.x, testNotAnagram.y)
+		res := IsAnagram(testNotAnagram.x, testNotAnagram.y)
 		assert.False(t, res)
 	}
 }
@@ -49,6 +49,6 @@ func BenchmarkIsAnagram(b *testing.B) {
 	}
 	for n := 0; n < b.N; n++ {
 		i := testData[rand.Intn(len(testData))]
-		isAnagram(i.x, i.y)
+		IsAnagram(i.x, i.y)
 	}
 }

@@ -40,13 +40,13 @@ func TestCountCharacter(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		res := countCharacter(test.needle, test.haystack)
+		res := CountCharacter(test.needle, test.haystack)
 		assert.Equal(t, test.expected, res)
 	}
 }
 
 func BenchmarkCountCharacter(b *testing.B) {
 	for n := 0; n < b.N; n++ {
-		countCharacter("a", "83gnsdawondfivamnoicsvaosicv")
+		CountCharacter("a", "83gnsdawondfivamnoicsvaosicv")
 	}
 }

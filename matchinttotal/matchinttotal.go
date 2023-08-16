@@ -1,7 +1,7 @@
 package matchinttotal
 
-// matchIntTotal takes an input slice of ints, and returns the total of any ints which appear more than once
-func matchIntTotal(input []int) int {
+// MatchIntTotal takes an input slice of ints, and returns the total of any ints which appear more than once
+func MatchIntTotal(input []int) int {
 	inputData := make(map[int]int)
 	var inputTotal int
 
