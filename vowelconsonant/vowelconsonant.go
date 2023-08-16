@@ -5,8 +5,8 @@ import (
 )
 
 type Info struct {
-	vowels     int
-	consonants int
+	Vowels     int
+	Consonants int
 }
 
 // VowelConsonant takes an input string, and returns an Info struct containing vowels (int) and consonants (int)
@@ -18,10 +18,10 @@ func VowelConsonant(input string) Info {
 
 	for _, x := range input {
 		if strings.ContainsRune(vowels, x) {
-			i.vowels++
+			i.Vowels++
 		}
 		if strings.ContainsRune(consonants, x) {
-			i.consonants++
+			i.Consonants++
 		}
 	}
 
