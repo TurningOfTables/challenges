@@ -8,6 +8,7 @@ use (
 	./non_matching_characters
 	./palindrome
 	./reverseslice
+	./sortslice
 	./string_reverse
 	./vowelconsonant
 )
