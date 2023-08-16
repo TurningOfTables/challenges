@@ -7,4 +7,5 @@ use (
 	./non_matching_characters
 	./palindrome
 	./string_reverse
+	./vowelconsonant
 )
