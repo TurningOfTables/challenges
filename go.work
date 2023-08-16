@@ -1,0 +1,10 @@
+go 1.21.0
+
+use (
+	./anagram
+	./count_character
+	./count_digits
+	./non_matching_characters
+	./palindrome
+	./string_reverse
+)
