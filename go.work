@@ -4,6 +4,7 @@ use (
 	./anagram
 	./count_character
 	./count_digits
+	./fibonacci
 	./fizzbuzz
 	./matchinttotal
 	./non_matching_characters
