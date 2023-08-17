@@ -1,6 +1,7 @@
 package sortslice
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -34,4 +35,16 @@ func BenchmarkSortDesc(b *testing.B) {
 	for n := 0; n < b.N; n++ {
 		SortDesc(slice)
 	}
+}
+
+func ExampleSortAsc() {
+	var slice = []int{1, 4, 5, 2, 3}
+	fmt.Println(SortAsc(slice))
+	// Output: [1 2 3 4 5]
+}
+
+func ExampleSortDesc() {
+	var slice = []int{1, 4, 5, 2, 3}
+	fmt.Println(SortDesc(slice))
+	// Output: [5 4 3 2 1]
 }
